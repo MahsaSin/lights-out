@@ -41,7 +41,7 @@ lib/
 ### 1. Clone the repo
 ```bash
 git clone https://github.com/MahsaSin/lights-out.git
-cd tic-tac-toe
+cd lights-out
 ```
 
 ### 2. Install dependencies
