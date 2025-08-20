@@ -1,36 +1,75 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 💡 Lights Out
 
-## Getting Started
+A modern, polished implementation of the classic **Lights Out** puzzle built with **Next.js (App Router)**.  
+Supports time travel (move history), undo/redo, and a sleek, responsive UI.
 
-First, run the development server:
+---
 
+## ✨ Features
+- 🔲 **Interactive 3×3 game board** — toggle a cell and its neighbors
+- 🏆 **Win detection** when all lights are off
+- ⏪ **Move history with time travel** — jump back to any previous state
+- 🎮 **Undo / Redo controls** for smooth gameplay
+- 🎨 **Modern, responsive UI** with light/dark mode, hover effects, and transitions
+
+---
+
+## 📂 Project Structure
+/app
+
+├── layout.js # Root layout with `<html>` and `<body>`
+
+├── page.js # Main game logic (state, history, controls)
+
+├── globals.css # Custom styling for the game
+
+components/
+
+├── Board.jsx # Renders the 3×3 board
+
+├── Cell.jsx # Single cell component
+
+lib/
+
+└── lights.js # Game logic (neighbors, toggle, random puzzle, win check)
+
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repo
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/MahsaSin/lights-out.git
+cd tic-tac-toe
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Install dependencies
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### 3. Run the app
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+App will be available at 👉 http://localhost:3000
 
-## Learn More
+## Preview
+![Alt text](Preview.png)
 
-To learn more about Next.js, take a look at the following resources:
+## Technologies Used
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Next.js (App Router)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+React (with hooks: useState, useEffect)
 
-## Deploy on Vercel
+Modern CSS (Grid, Flexbox, Variables, Transitions)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## How to Play
+1. Each cell can be on (●) or off (○).
+2. Clicking a cell toggles it and its up/down/left/right neighbors.
+3. The goal is to turn all lights off (○).
+4. Use the Undo/Redo buttons or jump in the move history to go back in time.
+5. Press New random puzzle for a new challenge!
