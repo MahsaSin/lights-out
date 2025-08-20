@@ -40,8 +40,8 @@ lib/
 
 ### 1. Clone the repo
 ```bash
-git clone https://github.com/MahsaSin/lights.git
-cd lights
+git clone https://github.com/MahsaSin/lights-out.git
+cd lights-out
 ```
 
 ### 2. Install dependencies
